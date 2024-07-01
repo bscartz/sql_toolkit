@@ -1,8 +1,8 @@
 # sql_toolkit
 
-#### Functions
+## Functions
 
-SELECT 	<field names>
+SELECT 	//<field names>
 FROM    <schema.table>
 
 – – comment line
