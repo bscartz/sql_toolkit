@@ -122,7 +122,7 @@ FROM <br><br>
 PIVOT(AGG_FUNC(\<field name>))<br>
 FOR(\<field to be new columns> in (list>)
 
-Unpivot (transforms columns into rows)
+__Unpivot__ (transforms columns into rows)
 
 SELECT * 
 FROM <schema.table> <br><br>
