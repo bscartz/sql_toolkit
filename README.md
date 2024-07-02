@@ -121,8 +121,13 @@ FROM <br><br>
   FROM    <schema.table> ) <br><br>
 PIVOT(AGG_FUNC(\<field name>))<br>
 FOR(\<field to be new columns> in (list>)
+<br>
+<br>
 
 __Unpivot__ (transforms columns into rows)
+
+<br>
+<br>
 
 SELECT * 
 FROM <schema.table> <br><br>
