@@ -102,7 +102,33 @@ FORMAT(value, format) <br>
 IIF(condition, true_value, false_value) <br>
 \-- returns one of two values, based on whether the condition is true or false.
 
+LEAST(expression1, expression2, expressionN) <br>
+\-- Returns the lowest of the expressions. Expression can be variable or constant. EG: LEAST(base_salary, 3000) sets max salary at 3000
 
+GREATEST(expression1, expression2, expressionN) <br>
+\-- Returns the highest of the expressions. Expression can be variable or constant. EG: LEAST(base_salary, 3000) sets min salary at 3000
+
+<br>
+<br>
+
+## Pivot
+
+transform rows into columns
+
+SELECT \* <br>
+FROM <br><br>
+( SELECT \<field names of interest> <br>
+  FROM    <schema.table> ) <br><br>
+PIVOT(AGG_FUNC(\<field name>))<br>
+FOR(\<field to be new columns> in (list>)
+
+Unpivot (transforms columns into rows)
+
+SELECT * 
+FROM <schema.table> <br><br>
+UNPIVOT(\<new measure column> <br>
+	FOR \<new column for field names> IN (list of field names))
+ 
 
 
 
